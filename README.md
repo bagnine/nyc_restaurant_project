@@ -1,22 +1,16 @@
 # nyc_restaurant_project
-Introduction:
+#### Introduction:
 
 The COVID-19 pandemic and enforced business closures to mitigate transmission has dramatically altered the landscape of American commerce.  According to Yelp's Local Economic Impact Report 163,735 businesses were listed as closed as of August 31st as a result of the pandemic.  The hospitality and restaurant industry has been particularly hard hit with the National Restaurant Association estimating that 1 in 6 restaurants nationwide has closed, nearly 3 million employees are out of work and that an estimated $240 billion in sales will be lost by the end of 2020 due to the pandemic.
 
-Furthermore, scientists warn that the likelihood of a new pandemic is not zero *insert stat/better phrasing here https://www.bbc.com/news/science-environment-52775386*
+Beyond the immediate impact of the pandemic, there is a growing concensus among public health experts of an increased likelihood of future events.  Factors including increased population density, increased contact with mammalian vectors and the volume of global travel have increased the rate at which new infectious diseases emerge. In the last 20 years there were 6 major threats - SARS, MERS, Ebola, avian influenza, swine flu and COVID-19. 
 
-To address this gap in the literature we compared the characteristics of closed and open restaurants in New York City.  As a secondary aim, we wanted to characterize the market opportunity when restrictions are fully lifted.  
+To address these issues, our project aimed to (1) identify the characteristics of restaurants that have closed as a result of the pandemic in New York City (NYC), (2) use attributes of surviving restaurants to recommend better business models, and (3) characterize the market opportunity when restrictions are fully lifted.  
 
-Methods:
+#### Methods:
 
-Data for this analysis came from a variety of sources.  
+Data for this analysis was collected from a variety of sources.  A list of COVID-19 related restaurant closures in NYC was compiled from lifestyle websites including theinfatuation.com and donyc.com.  The name and zipcode of closed restaurants were compiled for cross-referencing with other websites. In total 187 closed restaurants were identified. A sample of open restaurants in the zipcodes where closures occured was collected using the YELP API business search.  We requested 35 results per zip code.  Returned restaurants were sorted by relevance and distance so results were not perfectly matched by zip code.  We excluded any results outside of the boroughs of Manhattan, Queens or Brooklyn.  Additionally, restaurants with fewer than 16 reviews were excluded to avoid including any restaurants newly opened during the pandemic in our sample.  After excluding duplicates our sample contained 1173 open restaurants.  
 
-A list of COVID19 related restaurant closures in NYC was compiled from lifestyle websites including theinfatuation.com and donyc.com.  The name and zipcode of closed restaurants were compiled for cross-referencing with other websites.
+Information on both closed and open restaurants collected from the YELP API included the category (cuisine), price point, coordinates, and type of transactions (reservations, delivery and/or takeout). Information on COVID19 safety procedures including whether or not they had outdoor seating was scrapped from yelp.com.  Population density by zipcode was collected from usa.com. The number of restaurants by zipcode was collected from NYC OpenData based on Department of Health and Mental Hygiene Restaurant Inspection Results.
 
-A sample of open restaurants in the zipcodes where closures occured was collected using the YELP API business search.  
-
-Information on both closed and open restaurants collected from the YELP API included the category (cuisine), price point, coordinates, type of transactions (reservations, delivery and/or takeout), and whether or not they had outdoor seating.  *HOURS OF OPERATION*
-
-Information on COVID19 safety procedures was scrapped from the yelp.com using beautifulsoup *this needs editing*
-
-Population density by zipcode was collected from usa.com. The density of restaurants by zipcode was collected from NYC OpenData based on Department of Health and Mental Hygiene Restaurant Inspection Results.
+Value counts were calculated for all categorical variables. Descriptive statistics and histograms were created for continuous variables to assess the distribution and evaluate measures of central tendency and dispersion. Chi-square test of association were used to assess the relationship of our categorical features of interest with closure, and the independent samples t-test was used to assess the relationship between closure and our continuous features of interest.
