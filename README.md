@@ -1,4 +1,4 @@
-# nyc_restaurant_project
+# Predicting NYC Restaurant Closures in the COVID-19 Pandemic
 ### Introduction:
 
 The COVID-19 pandemic and enforced business closures to mitigate transmission has dramatically altered the landscape of American commerce.  According to Yelp's Local Economic Impact Report 163,735 businesses were listed as closed as of August 31st as a result of the pandemic.  The hospitality and restaurant industry has been particularly hard hit with the National Restaurant Association estimating that 1 in 6 restaurants nationwide has closed, nearly 3 million employees are out of work and that an estimated $240 billion in sales will be lost by the end of 2020 due to the pandemic.
