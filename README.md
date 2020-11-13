@@ -39,18 +39,18 @@ Additionally, we'd like to acknowledge that while our model suggests that eating
 
 #### Repository Structure:
 
-├── README.md                                            <- README for reviewers of this project
-├── Project_Presentation.pdf                             <- PDF version of project presentation
+├── README.md                                 <- README for reviewers of this project
+├── Project_Presentation.pdf                  <- PDF version of project presentation
 ├── data
-│   ├── Closed restaurant zip codes.xlsx                 <- Manually gathered data on closed restaurants
-│   ├── closed.csv                                       <- closed restaurant data from Yelp API
-|   ├── DOITT_SUBWAY_STATION_01_13SEPT2010.csv           <- Subway station location info
-|   ├── mergeddata.csv                                   <- Complete dataframe with all restaurants and features
-|   ├── openrest.csv                                     <- Open restaurants pulled by zip code from Yelp API
-|   ├── pop density by zip ny.xlsx                       <- Population density figures by zip code
-|   ├── Restaurants__rolled_up_.csv                      <- Restaurant data from NYC Dept of Health
-├── EDA_merged.ipynb                                     <- Data exploration and feature engineering notebook
-├── models.ipynb                                         <- Modeling notebook
-├── Univariable & bivariable analysis.ipynb              <- Statistical testing notebook
-├── yelp_data_gather.ipynb                               <- Web scraping and API calling notebook
-└── notebooks                                            <- Supplemental exploration notebooks
+│   ├── Closed restaurant zip codes.xlsx      <- Manually gathered data on closed restaurants
+│   ├── closed.csv                            <- closed restaurant data from Yelp API
+|   ├── DOITT_SUBWAY_STATION_01_13SEPT2010    <- Subway station location info
+|   ├── mergeddata.csv                        <- Complete dataframe with all restaurants and features
+|   ├── openrest.csv                          <- Open restaurants pulled by zip code from Yelp API
+|   ├── pop density by zip ny.xlsx            <- Population density figures by zip code
+|   ├── Restaurants__rolled_up_.csv           <- Restaurant data from NYC Dept of Health
+├── EDA_merged.ipynb                          <- Data exploration and feature engineering notebook
+├── models.ipynb                              <- Modeling notebook
+├── Univariable & bivariable analysis.ipynb   <- Statistical testing notebook
+├── yelp_data_gather.ipynb                    <- Web scraping and API calling notebook
+└── notebooks                                 <- Supplemental exploration notebooks
