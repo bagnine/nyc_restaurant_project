@@ -39,6 +39,7 @@ Additionally, we'd like to acknowledge that while our model suggests that eating
 
 #### Repository Structure:
 
+```
 ├── README.md                                 <- README for reviewers of this project
 ├── Project_Presentation.pdf                  <- PDF version of project presentation
 ├── data
