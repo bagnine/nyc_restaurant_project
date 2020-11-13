@@ -59,4 +59,5 @@ Additionally, we'd like to acknowledge that while our model suggests that eating
 ├── models.ipynb                              <- Modeling notebook
 ├── Univariable & bivariable analysis.ipynb   <- Statistical testing notebook
 ├── yelp_data_gather.ipynb                    <- Web scraping and API calling notebook
-└── notebooks                                 <- Supplemental exploration notebooks
+├── notebooks                                 <- Supplemental exploration notebooks
+└── images                                    <- Visualizations
